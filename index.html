@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Portfolio-Ganesh</title>
+ <!-- ✅ Font Awesome CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <!-- CSS style File Link -->
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Start Navbar -->
+ <nav>
+     <div class="nav-container">
+         <div class="logo-name">
+            <span>Portfolio</span> 
+          </div>
+
+          <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#">About</a></div>
+                <div class="link"><a href="#">Skill</a></div>
+                <div class="link"><a href="#">Participate</a></div>
+                <div class="link"><a href="#">Achievement</a></div>
+                <div class="link-contact-btn"><a href="#">Contact us</a></div>
+            </div>
+           <!-- Icons -->
+        <i class="fa-solid fa-list humburg" onclick="humburg()"></i>
+        </div>
+
+         <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skill</a>
+                <a href="#">Participate</a>
+                <a href="#">Achievement</a>
+                <a href="#">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+         </div>
+ </nav>
+ <!-- End Navbar -->
+
+ <!--hero Section-->
+    <section>
+        <div class="main-container">
+            <!-- main Container Img -->
+            <div class="image">
+              <img src="unnamed.jpg" alt="">
+            </div>
+            <!-- main Container content -->
+          <div class="content">
+             <h1>Hey I'm <span>Ganesh</span></h1>
+                    <div class="typewriter">I'm a <span></span></div>
+                     <p>"I am a passionate frontend developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy creating responsive and user-friendly web interfaces. I'm familiar with modern tools like React and Git, and I'm always eager to learn new technologies. I'm looking for opportunities to grow and contribute to real-world projects."</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+              <div class="btn">
+               <button>Download Resume</button>
+              </div>
+         </div>
+     </div>
+    </section>
+    <!-- End Hero Section -->
+     <!-- Javascript Link -->
+   <script src="script.js"></script>
+
+</body>
+</html>
