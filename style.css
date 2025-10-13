@@ -1,58 +1,67 @@
 /* google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* Random propety */
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 /* Main Html */
-html{
+html {
     overflow-x: hidden;
 }
+
 /* project body */
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
- background: linear-gradient(to right, rgb(255,255,255), rgb(254, 215, 173));
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
 }
+
 /* Start Navbar */
 
 /* nav-bar (nav)*/
-nav{
+nav {
     width: 100%;
     height: 10vh;
     position: sticky;
 }
+
 /* nav-container */
-.nav-container{
+.nav-container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 /* logo-name(Class) */
-.logo-name{
+.logo-name {
     color: black;
     font-size: 2rem;
     font-weight: bolder;
 }
+
 /* logo-name span(Protfolio) */
-.logo-name span{
+.logo-name span {
     color: rgb(109, 67, 0);
-    text-shadow: 0 0 10px rgb(109,67,0);
+    text-shadow: 0 0 10px rgb(109, 67, 0);
 }
+
 /* nav-container(class) */
-.nav-container .links{
+.nav-container .links {
     display: flex;
     gap: 3rem;
     align-items: center;
 }
+
 /* nav-container(home,about,achivement) */
-.nav-container .links a{
+.nav-container .links a {
     font-size: 1.2rem;
     color: black;
     position: relative;
@@ -60,36 +69,41 @@ nav{
     font-weight: bold;
     transform: 0.3s linear;
 }
+
 /* home,about= bottom-line effect */
 .nav-container .links a::before {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background-color: rgb(109, 67, 0);
-  transition: width 0.3s linear;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(109, 67, 0);
+    transition: width 0.3s linear;
 }
 
 .nav-container .links a:hover::before {
-  width: 100%;
+    width: 100%;
 }
+
 /* Contact button (class) */
-.nav-container .link-contact-btn{
- background-color: rgb(109, 67, 0);
- padding: 5px 20px;
- border-radius: 20px;
- border: 2px solid rgb(109, 67, 0);  
- transition: 0.2s linear;
+.nav-container .link-contact-btn {
+    background-color: rgb(109, 67, 0);
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(109, 67, 0);
+    transition: 0.2s linear;
 }
+
 /* Contach us (Name) */
-.nav-container .link-contact-btn a{
+.nav-container .link-contact-btn a {
     color: white;
     transition: 0.3s linear;
 }
+
 /* cancel icon */
-.humburg,.cancel{
+.humburg,
+.cancel {
     cursor: pointer;
     position: absolute;
     right: 15px;
@@ -98,8 +112,9 @@ nav{
     font-size: 2rem;
     display: none;
 }
+
 /* dropdown(class) */
-.dropdown{
+.dropdown {
     z-index: 100;
     position: absolute;
     top: 0;
@@ -110,108 +125,130 @@ nav{
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
 }
+
 /* dropdoen List */
-.dropdown .links a{
-   color: white;
-   display: flex;
-   text-decoration: none;
-   justify-content: center;
-   padding: 15px 0;
-   align-items: center;
+.dropdown .links a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
 }
+
 /* dropdown links Hover Effect */
-.dropdown .links a:hover{
+.dropdown .links a:hover {
     background-color: rgb(109, 67, 0);
 }
+
 /* End of Navbar */
 
- /* <!--Start hero Section--> */
+/* <!--Start hero Section--> */
 
- /* Section Property */
-section{
+/* Section Property */
+section {
     width: 100%;
     height: 90vh;
 }
+
 /* Main-conatiner(Class) */
-.main-container{
+.main-container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* Main-Container(image) */
-.main-container .image img{
+.main-container .image img {
     z-index: -1;
-  border-radius: 100%;  /* for circle */
-  width: 460px;
-  height: 460px;
-  object-fit: cover;   /* optional: keeps image ratio inside the box */
+    border-radius: 100%;
+    /* for circle */
+    width: 460px;
+    height: 460px;
+    object-fit: cover;
+    /* optional: keeps image ratio inside the box */
 }
+
 /* Main Container(Content) */
-.main-container .content{
+.main-container .content {
     color: black;
     width: 40%;
     min-height: 100px;
 }
+
 /* Main Container Content (Hey i'm Ganesh) */
-.main-container .content h1 span{
-    color: rgb(109,67,0);
-    text-shadow: 0 0 10px rgb(109,67,0);
+.main-container .content h1 span {
+    color: rgb(109, 67, 0);
+    text-shadow: 0 0 10px rgb(109, 67, 0);
 }
+
 /* Main Container Content (I am a) */
-.main-container .content .typewriter{
+.main-container .content .typewriter {
     color: rgb(109, 67, 0);
     font-size: 2.5rem;
     text-shadow: 0 0 4px rgb(109, 67, 0);
     position: relative;
     transition: 0.3s linear;
     font-weight: 600;
-    font-size: clamp(1rem,1rem+5vw,2rem);
+    font-size: clamp(1rem, 1rem+5vw, 2rem);
 }
+
 /* Main Conatiner .Content .typeWriter (Blank Span(Developer)) */
-.main-container .content .typewriter span::before{
+.main-container .content .typewriter span::before {
     content: "Developer";
     animation: words 15s infinite;
 }
+
 /*  Main Conatiner .Content .typeWriter (Blank Span(Developer)) change Name (Developer-Designer) Effect */
-.main-container .content .typewriter span::after{
+.main-container .content .typewriter span::after {
     content: "";
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left:3px solid;
+    border-left: 3px solid;
     animation: cursor 0.6s linear;
 }
-@keyframes cursor{
-    to{
+
+@keyframes cursor {
+    to {
         border-left: 3px solid #b74b4b;
     }
 }
-@keyframes words{
-    0%, 33%{
+
+@keyframes words {
+
+    0%,
+    33% {
         content: "Developer";
     }
-    34%, 66%{
+
+    34%,
+    66% {
         content: "Designer";
     }
-    67%, 100%{
+
+    67%,
+    100% {
         content: "Youtuber";
     }
 }
+
 /* Paragraph of My Self  */
-.content p{
-    font-size: clamp(0.4rem,0.2rem + 9vw, 1rem);
+.content p {
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
 }
+
 /* Social Links (github,youtube,linkdin */
-.content .social-links i{
+.content .social-links i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
-    background-color:transparent darkblue;
+    background-color: transparent darkblue;
     border: 0.2rem solid rgb(109, 67, 0);
     border-radius: 50%;
     color: rgb(109, 67, 0);
@@ -219,15 +256,17 @@ section{
     font-size: 1.5rem;
     transition: 0.2s linear;
 }
+
 /* Hover Effect of (Github,linkdin,youtube) */
-.content .social-links i:hover{
+.content .social-links i:hover {
     scale: 1.3;
     color: white;
     background-color: rgb(109, 67, 0);
-    filter: drop-shadow(0 0 10px rgb(109,67,0));
+    filter: drop-shadow(0 0 10px rgb(109, 67, 0));
 }
+
 /* Download Resume button */
-.btn button{
+.btn button {
     width: 40%;
     height: 6vh;
     margin: 30px;
@@ -239,50 +278,76 @@ section{
     font-weight: 700;
     transition: 0.2s linear;
 }
+
 /* Hover Effect Download Button  */
-.btn button:hover{
-    scale: 1,1;
+.btn button:hover {
+    scale: 1, 1;
     color: rgb(109, 67, 0);
     border: 2px solid rgb(109, 67, 0);
     background-color: transparent;
     font-weight: 700;
     box-shadow: 0 0 40px rgb(109, 67, 0);
 }
+
+
+/* Min 375 to  Max 667*/
+@media (min-width: 375px) and (max-width: 667px) {
+    .main-container .image img {
+
+        height: 200px;
+        width: 200px;
+    }
+
+    /* Ya range madhlya screens sathi style */
+
+}
+
 /* Media Query Max-900px */
 
-@media (max-width:900px){
-  body{
-    overflow-y: visible;
-  }
-.logo{
-    position: absolute;
-    top: 16px;
-    left: 15px;
-    font-size: 1.5rem;
-  }
-  .main-container{
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-container .links{
-    display: none;
-  }
-  .humburg,.cancel{
-    display: block;
-  }
-  .main-container .content{
-    width: 80%;
-  }
- .social-links{
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
- }
- .cancel{
-    color: white;
- }
- .main-container image{
-    width: 80%;
-    margin-bottom: 0px;
- }
+@media (max-width:900px) {
+    body {
+        overflow-y: visible;
+    }
+
+    .logo {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .humburg,
+    .cancel {
+        display: block;
+    }
+
+    .main-container .content {
+        width: 80%;
+    }
+
+    .social-links {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+        display: flex;
+
+    }
+
+    .cancel {
+        color: white;
+    }
+
+    .main-container image {
+        width: 80%;
+        margin-bottom: 0px;
+    }
 }
