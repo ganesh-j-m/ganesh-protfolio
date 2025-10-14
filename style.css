@@ -207,7 +207,7 @@ section {
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid;
+    
     animation: cursor 0.6s linear;
 }
 
@@ -291,15 +291,28 @@ section {
 
 
 /* Min 375 to  Max 667*/
-@media (min-width: 375px) and (max-width: 667px) {
+@media (min-width: 336px) and (max-width: 667px) {
     .main-container .image img {
 
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
 
     /* Ya range madhlya screens sathi style */
 
+}
+
+/* Min 375 to  Max 667*/
+@media (max-width: 336px) {
+    .main-container .image img {
+
+        height: 150px;
+        width: 150px;
+    }
+
+    .content h1 {
+        font-size: 15px;
+    }
 }
 
 /* Media Query Max-900px */
@@ -341,7 +354,6 @@ section {
         display: flex;
 
     }
-
     .cancel {
         color: white;
     }
