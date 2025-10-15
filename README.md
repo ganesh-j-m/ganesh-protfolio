@@ -1,6 +1,7 @@
 # 🌟 Ganesh's Portfolio
 live demo link [(https://ganeshmore.netlify.app/)]
 Welcome to my personal portfolio website — a digital space that showcases my journey, my passion, and my achievements from the beginning of my life to the milestones I will achieve in the future. 🚀
+github Deploy link [(https://ganesh-j-m.github.io/ganesh-protfolio/)]
 
 ---
 
