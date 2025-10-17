@@ -1,0 +1,268 @@
+/* google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Random propety */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Main Html */
+html {
+    overflow-x: hidden;
+}
+
+/* project body */
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
+}
+
+/* Start Navbar */
+
+/* nav-bar (nav)*/
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+/* nav-container */
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* logo-name(Class) */
+.logo-name {
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+/* logo-name span(Protfolio) */
+.logo-name span {
+    color: rgb(109, 67, 0);
+    text-shadow: 0 0 10px rgb(109, 67, 0);
+}
+
+/* nav-container(class) */
+.nav-container .links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* nav-container(home,about,achivement) */
+.nav-container .links a {
+    font-size: 1.2rem;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    transform: 0.3s linear;
+}
+
+/* home,about= bottom-line effect */
+.nav-container .links a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(109, 67, 0);
+    transition: width 0.3s linear;
+}
+
+.nav-container .links a:hover::before {
+    width: 100%;
+}
+
+/* Contact button (class) */
+.nav-container .link-contact-btn {
+    background-color: rgb(109, 67, 0);
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(109, 67, 0);
+    transition: 0.2s linear;
+}
+
+/* Contach us (Name) */
+.nav-container .link-contact-btn a {
+    color: white;
+    transition: 0.3s linear;
+}
+
+/* cancel icon */
+.humburg,
+.cancel {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: black;
+    font-size: 2rem;
+    display: none;
+}
+
+/* dropdown(class) */
+.dropdown {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: brightness(40%)blur(3px);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+
+/* dropdoen List */
+.dropdown .links a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+}
+
+/* dropdown links Hover Effect */
+.dropdown .links a:hover {
+    background-color: rgb(109, 67, 0);
+}
+
+/* End of Navbar */
+
+/* Start Hero Section */
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+
+/* 2nd Box */
+
+
+.box-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin: 4rem;
+    gap: 2rem;
+    margin-left: 10rem;
+    height: fit-content;
+
+}
+
+.left-box2 {
+    height: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    object-fit: cover;
+    overflow: scroll;
+
+}
+
+.left-box2 .img2 {
+    height: 100%;
+    width: 100%;
+}
+
+.left-box2 .img2:hover {
+    border: 3px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.keys2 {
+    font-weight: bold;
+}
+
+.right-box2 {
+    height: fit-content;
+
+}
+
+.right-box2 .keys2 {
+    margin-top: 1rem;
+}
+
+/* End Hero Section */
+
+/* Start Media Query */
+
+
+/* Media Query Max-900px */
+
+@media (max-width:900px) {
+    body {
+        overflow-y: visible;
+    }
+
+    .logo {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .humburg,
+    .cancel {
+        display: block;
+    }
+
+    .main-container .content {
+        width: 80%;
+    }
+
+    .social-links {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+        display: flex;
+
+    }
+
+    .cancel {
+        color: white;
+    }
+
+
+    .box-container2 {
+        margin-left: 0;
+        margin: 6px;
+    }
+
+    .left-box2 {
+        height: 300px;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        object-fit: cover;
+        overflow: scroll;
+    }
+
+}
+/* End Media Query */
