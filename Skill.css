@@ -276,4 +276,20 @@ section {
         margin-left: 0%;
 
     }
+
+    .head-html .star {
+        display: none;
+    }
+
+    .head .star {
+        display: none;
+    }
+
+    .head-big .star {
+        display: none;
+    }
+
+    .head-big-ra .star {
+        display: none;
+    }
 }
