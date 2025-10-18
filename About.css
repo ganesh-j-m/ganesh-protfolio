@@ -238,14 +238,12 @@ nav {
     .cancel {
         color: white;
     }
-}
 
-@media (max-width:900px) {
-
-    .humburg,
-    .cancel {
-        display: none;
+    .nav-container {
+        width: 80vw;
     }
 }
+
+
 
 /* End Media Query */

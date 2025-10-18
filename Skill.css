@@ -292,4 +292,8 @@ section {
     .head-big-ra .star {
         display: none;
     }
+
+    .nav-container {
+        width: 80vw;
+    }
 }
