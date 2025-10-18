@@ -241,6 +241,9 @@ nav {
 
     .Education {
         width: 80vw;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2.5rem;
     }
 }
 
