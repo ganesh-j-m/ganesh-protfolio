@@ -143,65 +143,102 @@ nav {
 
 /* End of Navbar */
 
-/* Start Hero Section */
-.main-container {
+/* <!--Start hero Section--> */
+.hero-section {
     height: 100%;
     width: 100%;
 }
 
-/* 2nd Box */
 
-
-.box-container2 {
+.detail {
+    width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    margin: 4rem;
-    gap: 2rem;
-    margin-left: 10rem;
-    height: fit-content;
-
-}
-
-.left-box2 {
-    height: 800px;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    object-fit: cover;
-    overflow: scroll;
+    gap: 2rem;
+    flex-direction: column;
+    margin: 2rem;
+    margin-top: 5rem;
 
 }
 
-.left-box2 .img2 {
-    height: 100%;
-    width: 100%;
+.detail .form {
+    padding: 2rem;
+    background: white;
+    border: 2px solid black;
+    height: fit-content;
+    width: fit-content;
 }
 
-.left-box2 .img2:hover {
-    border: 3px solid white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.detail .form h3 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.detail .form p {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.detail .form form {
+    font-size: 1.5rem;
+}
+
+.detail .form #fname {
+
+    height: 2rem;
+    width: 20rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.detail .form #lname {
+    height: 2rem;
+    width: 20rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+.detail .form #button {
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.5rem;
+
+    background: rgb(109, 67, 0);
+    color: white;
+    font-weight: bold;
     text-align: center;
 }
 
-.keys2 {
-    font-weight: bold;
+.detail .form #button:hover {
+    border: 2px solid black;
+    background: purple;
 }
 
-.right-box2 {
-    height: fit-content;
+.detail .address {
 
+    background: white;
+    text-align: start;
+    padding: 2rem;
+    height: max-content;
+    border: 2px solid black;
 }
 
-.right-box2 .keys2 {
-    margin-top: 1rem;
+.detail .address h2 {
+    padding-bottom: 0.5rem;
+    font-size: 2.5rem;
 }
 
-/* End Hero Section */
-
-/* Start Media Query */
+/* Hover Effect Download Button  */
+.btn button:hover {
+    scale: 1, 1;
+    color: rgb(109, 67, 0);
+    border: 2px solid rgb(109, 67, 0);
+    /* background-color: transparent; */
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(109, 67, 0);
+}
 
 
 /* Media Query Max-900px */
@@ -248,22 +285,32 @@ nav {
         color: white;
     }
 
+    .hero-section {
+        width: 100%;
+        margin: 0;
 
-    .box-container2 {
-        margin-left: 0;
-        margin: 6px;
     }
 
-    .left-box2 {
-        height: 300px;
-        width: 400px;
+    .detail {
+        width: 80vw;
+        display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
-        object-fit: cover;
-        overflow: scroll;
+    }
+
+    .detail .form #fname {
+
+        height: 1rem;
+        width: 10rem;
+        font-size: 0.5rem;
+        padding: 1rem;
+    }
+
+    .detail .form #lname {
+        height: 1rem;
+        width: 10rem;
+        font-size: 0.5rem;
+        padding: 1rem;
     }
 
 }
-
-/* End Media Query */
